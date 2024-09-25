@@ -7,7 +7,7 @@ export default function BankKiosk() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Header */}
       <header className="bg-gradient-sc bg-xl p-10 text-white">
-        <h1 className="text-2xl text-center">Welcome to SymBank</h1>
+        <h1 className="text-2xl text-center">Welcome to SYM Bank</h1>
       </header>
 
       {/* Main content */}
@@ -47,8 +47,8 @@ export default function BankKiosk() {
       </main>
 
       {/* Footer */}
-      <footer className="p-4 text-center text-sm text-scwhite bg-scblack">
-        © 2024 SymBank. All rights reserved. For assistance, please call 1-800-SYM-BANK
+      <footer className="p-4 text-center text-sm text-white bg-gray-800">
+        © 2024 SYM Bank. All rights reserved. For assistance, please call 1-800-SYM-BANK
       </footer>
     </div>
   )
