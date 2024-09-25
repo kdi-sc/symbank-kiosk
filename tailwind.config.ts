@@ -20,7 +20,23 @@ const config: Config = {
     },
 ],
 theme: {
-
+  extend: {
+    backgroundImage: {
+        'gradient-sc': 'linear-gradient(-45deg, #1d08bd, #CC0017, #1d08bd, #EB001A)',
+        'gradient-main':
+            'linear-gradient(180deg, var(--scgray-90) 0%, var(--scgray-98) 18%)',
+    },
+    backgroundSize: {
+        xl: '400% 400%',
+    },
+    animation: {
+        gradient: 'gradient 15s ease infinite',
+    },
+    fontFamily: {
+        primary: ['DM Sans', 'sans-serif'],
+        sans: ['DM Sans', 'sans-serif'],
+    },
+},
 },
   plugins: [require('tailwindcss-animate')],
 };

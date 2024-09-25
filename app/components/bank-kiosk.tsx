@@ -6,7 +6,7 @@ export default function BankKiosk() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Header */}
-      <header className="bg-gray-800 bg-xl p-10 text-white">
+      <header className="bg-gradient-sc bg-xl p-10 text-white">
         <h1 className="text-2xl text-center">Welcome to SymBank</h1>
       </header>
 
