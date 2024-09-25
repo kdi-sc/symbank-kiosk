@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Symbank Kiosk",
-  description: "Kiosk for Symbank",
+  title: "SymBank Kiosk",
+  description: "Kiosk for SymBank",
 };
 
 export default function RootLayout({
