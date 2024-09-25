@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const colors = require('tailwindcss/colors');
 
 const config: Config = {
   content: [
@@ -6,14 +7,21 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+  safelist: [
+    {
+        pattern: /basis-/,
+        variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
-  },
-  plugins: [],
+    {
+        pattern: /bg-(?!gradient)/,
+    },
+    {
+        pattern: /static|fixed|relative|absolute/,
+    },
+],
+theme: {
+
+},
+  plugins: [require('tailwindcss-animate')],
 };
 export default config;
